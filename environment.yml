@@ -1,0 +1,19 @@
+name: ctg-bert
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - pip:
+      - torch
+      - transformers
+      - datasets
+      - tokenizers
+      - shap
+      - accelerate
+      - evaluate
