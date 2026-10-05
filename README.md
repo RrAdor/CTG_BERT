@@ -130,17 +130,6 @@ python run_hyperparameter_suite.py
 * **Delivery Prediction ($\tau^* = 0.64$)**: Accuracy **$90.99\%$** ($91.89\%$ prior-calibrated), Brier score **$0.1501$**.
 
 ---
-
-## Citation
-
-If you use CTG-BERT in your research, please cite:
-
-```bibtex
-@article{ctgbert2026,
-  title={CTG-BERT: Multi-Task Clinical Language Modeling for Fetal Health Classification and Delivery Mode Prediction},
-  author={Research Team},
-  journal={arXiv preprint},
-  year={2026}
 }
 ```
 
