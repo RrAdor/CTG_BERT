@@ -1,0 +1,242 @@
+[
+  {
+    "id": "Trial 1",
+    "name": "Baseline (Notebook Config)",
+    "lr": 3e-05,
+    "weight_decay": 0.05,
+    "batch_size": 16,
+    "epochs": 13,
+    "fetal_dropout": 0.1,
+    "delivery_dropout": 0.25
+  },
+  {
+    "id": "Trial 2",
+    "name": "Higher LR + Regularization",
+    "lr": 5e-05,
+    "weight_decay": 0.1,
+    "batch_size": 16,
+    "epochs": 8,
+    "fetal_dropout": 0.15,
+    "delivery_dropout": 0.3
+  },
+  {
+    "id": "Trial 3",
+    "name": "Batch Size 32 + Moderate LR",
+    "lr": 5e-05,
+    "weight_decay": 0.05,
+    "batch_size": 32,
+    "epochs": 8,
+    "fetal_dropout": 0.1,
+    "delivery_dropout": 0.25
+  },
+  {
+    "id": "Trial 4",
+    "name": "Conservative LR + Light Reg",
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "batch_size": 32,
+    "epochs": 8,
+    "fetal_dropout": 0.1,
+    "delivery_dropout": 0.2
+  },
+  {
+    "id": "Trial 5",
+    "name": "Baseline (Notebook Config)",
+    "lr": 3e-05,
+    "weight_decay": 0.05,
+    "batch_size": 16,
+    "epochs": 11,
+    "fetal_dropout": 0.1,
+    "delivery_dropout": 0.25
+  },
+  {
+    "id": "Trial 6",
+    "name": "Baseline (Notebook Config)",
+    "lr": 3e-05,
+    "weight_decay": 0.05,
+    "batch_size": 16,
+    "epochs": 10,
+    "fetal_dropout": 0.1,
+    "delivery_dropout": 0.25
+  },
+  {
+    "id": "Trial 7",
+    "name": "Baseline (Notebook Config)",
+    "lr": 3e-05,
+    "weight_decay": 0.05,
+    "batch_size": 16,
+    "epochs": 15,
+    "fetal_dropout": 0.1,
+    "delivery_dropout": 0.25
+  },
+  {
+    "id": "Trial 8",
+    "name": "Higher LR + Regularization",
+    "lr": 5e-05,
+    "weight_decay": 0.1,
+    "batch_size": 16,
+    "epochs": 10,
+    "fetal_dropout": 0.15,
+    "delivery_dropout": 0.3
+  },
+  {
+    "id": "Trial 9",
+    "name": "Higher LR + Regularization",
+    "lr": 5e-05,
+    "weight_decay": 0.1,
+    "batch_size": 16,
+    "epochs": 13,
+    "fetal_dropout": 0.15,
+    "delivery_dropout": 0.3
+  },
+  {
+    "id": "Trial 10",
+    "name": "Higher LR + Regularization",
+    "lr": 5e-05,
+    "weight_decay": 0.1,
+    "batch_size": 16,
+    "epochs": 15,
+    "fetal_dropout": 0.15,
+    "delivery_dropout": 0.3
+  },
+  {
+    "id": "Trial 11",
+    "name": "Batch Size 32 + Moderate LR",
+    "lr": 5e-05,
+    "weight_decay": 0.05,
+    "batch_size": 32,
+    "epochs": 10,
+    "fetal_dropout": 0.1,
+    "delivery_dropout": 0.25
+  },
+  {
+    "id": "Trial 12",
+    "name": "Batch Size 32 + Moderate LR",
+    "lr": 5e-05,
+    "weight_decay": 0.05,
+    "batch_size": 32,
+    "epochs": 15,
+    "fetal_dropout": 0.1,
+    "delivery_dropout": 0.25
+  },
+  {
+    "id": "Trial 13",
+    "name": "Low LR + Small Batch",
+    "lr": 1e-05,
+    "weight_decay": 0.01,
+    "batch_size": 16,
+    "epochs": 15,
+    "fetal_dropout": 0.1,
+    "delivery_dropout": 0.2
+  },
+  {
+    "id": "Trial 14",
+    "name": "Moderate LR + Strong Regularization",
+    "lr": 3e-05,
+    "weight_decay": 0.1,
+    "batch_size": 16,
+    "epochs": 15,
+    "fetal_dropout": 0.2,
+    "delivery_dropout": 0.3
+  },
+  {
+    "id": "Trial 15",
+    "name": "High LR + Light Regularization",
+    "lr": 7e-05,
+    "weight_decay": 0.01,
+    "batch_size": 16,
+    "epochs": 8,
+    "fetal_dropout": 0.1,
+    "delivery_dropout": 0.2
+  },
+  {
+    "id": "Trial 16",
+    "name": "Low LR + Large Batch",
+    "lr": 1e-05,
+    "weight_decay": 0.05,
+    "batch_size": 32,
+    "epochs": 15,
+    "fetal_dropout": 0.1,
+    "delivery_dropout": 0.25
+  },
+  {
+    "id": "Trial 17",
+    "name": "Moderate LR + High Dropout",
+    "lr": 3e-05,
+    "weight_decay": 0.05,
+    "batch_size": 16,
+    "epochs": 15,
+    "fetal_dropout": 0.25,
+    "delivery_dropout": 0.35
+  },
+  {
+    "id": "Trial 18",
+    "name": "Higher LR + Large Batch",
+    "lr": 7e-05,
+    "weight_decay": 0.05,
+    "batch_size": 32,
+    "epochs": 10,
+    "fetal_dropout": 0.15,
+    "delivery_dropout": 0.25
+  },
+  {
+    "id": "Trial 19",
+    "name": "Very Conservative Configuration",
+    "lr": 5e-06,
+    "weight_decay": 0.01,
+    "batch_size": 16,
+    "epochs": 20,
+    "fetal_dropout": 0.1,
+    "delivery_dropout": 0.15
+  },
+  {
+    "id": "Trial 20",
+    "name": "Strong Weight Decay",
+    "lr": 3e-05,
+    "weight_decay": 0.2,
+    "batch_size": 16,
+    "epochs": 13,
+    "fetal_dropout": 0.15,
+    "delivery_dropout": 0.3
+  },
+  {
+    "id": "Trial 21",
+    "name": "Small Batch + High Dropout",
+    "lr": 2e-05,
+    "weight_decay": 0.05,
+    "batch_size": 8,
+    "epochs": 15,
+    "fetal_dropout": 0.2,
+    "delivery_dropout": 0.3
+  },
+  {
+    "id": "Trial 22",
+    "name": "Large Batch + Low Dropout",
+    "lr": 3e-05,
+    "weight_decay": 0.01,
+    "batch_size": 32,
+    "epochs": 13,
+    "fetal_dropout": 0.05,
+    "delivery_dropout": 0.15
+  },
+  {
+    "id": "Trial 23",
+    "name": "High LR + Strong Dropout",
+    "lr": 5e-05,
+    "weight_decay": 0.1,
+    "batch_size": 32,
+    "epochs": 10,
+    "fetal_dropout": 0.2,
+    "delivery_dropout": 0.35
+  },
+  {
+    "id": "Trial 24",
+    "name": "Balanced Extended Training",
+    "lr": 2e-05,
+    "weight_decay": 0.05,
+    "batch_size": 16,
+    "epochs": 20,
+    "fetal_dropout": 0.15,
+    "delivery_dropout": 0.25
+  }
+]

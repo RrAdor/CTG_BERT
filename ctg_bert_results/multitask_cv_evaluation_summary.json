@@ -1,0 +1,891 @@
+{
+  "optimal_delivery_threshold": 0.6400000000000001,
+  "cv_statistical_summary_ctg": {
+    "accuracy": {
+      "mean": 0.8629411764705882,
+      "std": 0.018320484120467554,
+      "ci_95": 0.022747885562048313,
+      "ci_lower": 0.8401932909085399,
+      "ci_upper": 0.8856890620326365,
+      "folds": [
+        0.8705882352941177,
+        0.8647058823529412,
+        0.8352941176470589,
+        0.8852941176470588,
+        0.8588235294117647
+      ]
+    },
+    "macro_f1": {
+      "mean": 0.7994638977106979,
+      "std": 0.018485009123353564,
+      "ci_95": 0.022952170334936243,
+      "ci_lower": 0.7765117273757617,
+      "ci_upper": 0.8224160680456342,
+      "folds": [
+        0.8189678469678471,
+        0.7932850098353588,
+        0.7741946029732967,
+        0.8163522853957637,
+        0.7945197433812234
+      ]
+    },
+    "macro_precision": {
+      "mean": 0.7608875221713295,
+      "std": 0.01328475504051377,
+      "ci_95": 0.016495202058761937,
+      "ci_lower": 0.7443923201125675,
+      "ci_upper": 0.7773827242300915,
+      "folds": [
+        0.7786284005127474,
+        0.7639318630678078,
+        0.7486310492822259,
+        0.7665059928514246,
+        0.746740305142442
+      ]
+    },
+    "macro_recall": {
+      "mean": 0.8633036528157586,
+      "std": 0.02933520377597991,
+      "ci_95": 0.03642446640860537,
+      "ci_lower": 0.8268791864071532,
+      "ci_upper": 0.899728119224364,
+      "folds": [
+        0.8831741849900324,
+        0.8353730572919654,
+        0.8296505515092427,
+        0.8956653476324291,
+        0.8726551226551228
+      ]
+    },
+    "macro_roc_auc": {
+      "mean": 0.955446870502818,
+      "std": 0.005428620039084231,
+      "ci_95": 0.0067405220624584,
+      "ci_lower": 0.9487063484403595,
+      "ci_upper": 0.9621873925652764,
+      "folds": [
+        0.9567892833783619,
+        0.9549677496013489,
+        0.9481293002398092,
+        0.9632277083790175,
+        0.9541203109155525
+      ]
+    },
+    "macro_pr_auc": {
+      "mean": 0.8763716697981611,
+      "std": 0.018963411429358028,
+      "ci_95": 0.023546185254959648,
+      "ci_lower": 0.8528254845432014,
+      "ci_upper": 0.8999178550531207,
+      "folds": [
+        0.8752422480517935,
+        0.8464652744508531,
+        0.8753467776861331,
+        0.8886750366912054,
+        0.8961290121108209
+      ]
+    },
+    "ece": {
+      "mean": 0.06057303207762101,
+      "std": 0.02059724382751543,
+      "ci_95": 0.025574856122850608,
+      "ci_lower": 0.03499817595477041,
+      "ci_upper": 0.08614788820047162,
+      "folds": [
+        0.05639820545911788,
+        0.06290053251911609,
+        0.042218006884350526,
+        0.0944772005081177,
+        0.04687121501740286
+      ]
+    },
+    "brier_score": {
+      "mean": 0.21367649708306352,
+      "std": 0.013127311942674632,
+      "ci_95": 0.016299710632409405,
+      "ci_lower": 0.19737678645065412,
+      "ci_upper": 0.22997620771547292,
+      "folds": [
+        0.20693423095595329,
+        0.20198794090730482,
+        0.2341416104375155,
+        0.2192295396332202,
+        0.20608916348132383
+      ]
+    },
+    "class_sensitivities": {
+      "Normal": {
+        "mean": 0.8646969696969699,
+        "std": 0.01841380049545674,
+        "ci_95": 0.022863753145315267,
+        "ci_lower": 0.8418332165516546,
+        "ci_upper": 0.8875607228422852
+      },
+      "Suspect": {
+        "mean": 0.8390070921985815,
+        "std": 0.05328596810287045,
+        "ci_95": 0.06616326820276837,
+        "ci_lower": 0.7728438239958131,
+        "ci_upper": 0.9051703604013499
+      },
+      "Pathological": {
+        "mean": 0.886206896551724,
+        "std": 0.047141917724115495,
+        "ci_95": 0.058534422044318135,
+        "ci_lower": 0.8276724745074059,
+        "ci_upper": 0.9447413185960422
+      }
+    },
+    "class_specificities": {
+      "Normal": {
+        "mean": 0.9017894736842106,
+        "std": 0.050554085935772555,
+        "ci_95": 0.06277118846854804,
+        "ci_lower": 0.8390182852156626,
+        "ci_upper": 0.9645606621527586
+      },
+      "Suspect": {
+        "mean": 0.8954906727757258,
+        "std": 0.017840229687184427,
+        "ci_95": 0.022151570922262904,
+        "ci_lower": 0.8733391018534629,
+        "ci_upper": 0.9176422436979887
+      },
+      "Pathological": {
+        "mean": 0.9724214692060352,
+        "std": 0.008649152865206408,
+        "ci_95": 0.01073934172768773,
+        "ci_lower": 0.9616821274783475,
+        "ci_upper": 0.983160810933723
+      }
+    }
+  },
+  "cv_statistical_summary_delivery": {
+    "accuracy": {
+      "mean": 0.6845250255362615,
+      "std": 0.11712748544941394,
+      "ci_95": 0.1454329818826725,
+      "ci_lower": 0.539092043653589,
+      "ci_upper": 0.829958007418934,
+      "folds": [
+        0.8089887640449438,
+        0.5568181818181818,
+        0.8068181818181818,
+        0.6022727272727273,
+        0.6477272727272727
+      ]
+    },
+    "macro_f1": {
+      "mean": 0.4991015131783151,
+      "std": 0.055695276678732586,
+      "ci_95": 0.06915481992197996,
+      "ci_lower": 0.4299466932563351,
+      "ci_upper": 0.568256333100295,
+      "folds": [
+        0.5755960729312763,
+        0.44849750923991644,
+        0.5403993855606759,
+        0.4614443084455324,
+        0.46957028971417464
+      ]
+    },
+    "macro_precision": {
+      "mean": 0.535541268246907,
+      "std": 0.0207022263107691,
+      "ci_95": 0.02570520909274872,
+      "ci_lower": 0.5098360591541582,
+      "ci_upper": 0.5612464773396557,
+      "folds": [
+        0.5662162162162162,
+        0.5377846790890269,
+        0.5376447876447876,
+        0.5267094017094017,
+        0.5093512565751023
+      ]
+    },
+    "macro_recall": {
+      "mean": 0.5848280423280423,
+      "std": 0.040604427258043974,
+      "ci_95": 0.05041705549399678,
+      "ci_lower": 0.5344109868340455,
+      "ci_upper": 0.6352450978220391,
+      "folds": [
+        0.6134259259259259,
+        0.628747795414462,
+        0.5687830687830688,
+        0.5881834215167548,
+        0.525
+      ]
+    },
+    "macro_roc_auc": {
+      "mean": 0.6764825837742504,
+      "std": 0.039252576241700615,
+      "ci_95": 0.04873851075606807,
+      "ci_lower": 0.6277440730181824,
+      "ci_upper": 0.7252210945303185,
+      "folds": [
+        0.7052469135802468,
+        0.7266313932980599,
+        0.6349206349206349,
+        0.6437389770723104,
+        0.671875
+      ]
+    },
+    "macro_pr_auc": {
+      "mean": 0.1911988735602082,
+      "std": 0.0531892052941073,
+      "ci_95": 0.06604312130676208,
+      "ci_lower": 0.1251557522534461,
+      "ci_upper": 0.2572419948669703,
+      "folds": [
+        0.16784101517023028,
+        0.20123036841450953,
+        0.15896660771183155,
+        0.14842884621015384,
+        0.27952753029431576
+      ]
+    },
+    "ece": {
+      "mean": 0.08952475915890305,
+      "std": 0.048287265944862476,
+      "ci_95": 0.059956559695426404,
+      "ci_lower": 0.02956819946347665,
+      "ci_upper": 0.14948131885432947,
+      "folds": [
+        0.12221052807368592,
+        0.030779892748052373,
+        0.0904224785891446,
+        0.054724185981533766,
+        0.14948671040209857
+      ]
+    },
+    "brier_score": {
+      "mean": 0.37601860884642335,
+      "std": 0.09976684379611782,
+      "ci_95": 0.12387689815605805,
+      "ci_lower": 0.2521417106903653,
+      "ci_upper": 0.4998955070024814,
+      "folds": [
+        0.28697982235588687,
+        0.48947739754575986,
+        0.28965962969633635,
+        0.4764027879063652,
+        0.3375734067277685
+      ]
+    },
+    "class_sensitivities": {
+      "Vaginal": {
+        "mean": 0.7053703703703704,
+        "std": 0.14161447705933064,
+        "ci_95": 0.1758375977890237,
+        "ci_lower": 0.5295327725813468,
+        "ci_upper": 0.8812079681593941
+      },
+      "Cesarean": {
+        "mean": 0.46428571428571425,
+        "std": 0.17450732397939342,
+        "ci_95": 0.21667946160809323,
+        "ci_lower": 0.247606252677621,
+        "ci_upper": 0.6809651758938075
+      }
+    },
+    "class_specificities": {
+      "Vaginal": {
+        "mean": 0.46428571428571425,
+        "std": 0.17450732397939342,
+        "ci_95": 0.21667946160809323,
+        "ci_lower": 0.247606252677621,
+        "ci_upper": 0.6809651758938075
+      },
+      "Cesarean": {
+        "mean": 0.7053703703703704,
+        "std": 0.14161447705933064,
+        "ci_95": 0.1758375977890237,
+        "ci_lower": 0.5295327725813468,
+        "ci_upper": 0.8812079681593941
+      }
+    }
+  },
+  "oof_ctg": {
+    "task_name": "CTG / Fetal Health (OOF Validation)",
+    "n_samples": 1700,
+    "accuracy": 0.8629411764705882,
+    "macro_f1": 0.7991387343006978,
+    "macro_precision": 0.7589402670901402,
+    "macro_recall": 0.8634031032241669,
+    "macro_roc_auc": 0.9539327597368586,
+    "macro_pr_auc": 0.8734838188672039,
+    "mean_confidence": 0.8197379112243652,
+    "confidence_95_ci": 0.006681886859679251,
+    "class_confidences": {
+      "Normal": 0.8350529074668884,
+      "Suspect": 0.7375062108039856,
+      "Pathological": 0.8838824033737183
+    },
+    "class_sensitivities": {
+      "Normal": 0.8647014361300076,
+      "Suspect": 0.8389830508474576,
+      "Pathological": 0.8865248226950354
+    },
+    "class_specificities": {
+      "Normal": 0.9018567639257294,
+      "Suspect": 0.8954918032786885,
+      "Pathological": 0.9724182168056447
+    },
+    "class_pr_auc": {
+      "Normal": 0.9835343666695481,
+      "Suspect": 0.7028704175018466,
+      "Pathological": 0.9340466724302172
+    },
+    "ece": 0.04329790842883725,
+    "brier_score": 0.21367649708306355,
+    "decision_threshold": null,
+    "prior_calibrated": {
+      "task_name": "CTG / Fetal Health (OOF Validation) [Prior-Calibrated]",
+      "n_samples": 1700,
+      "accuracy": 0.8888235294117647,
+      "macro_f1": 0.7837545326119865,
+      "macro_precision": 0.8539461624298944,
+      "macro_recall": 0.7466040228649059,
+      "macro_roc_auc": 0.9573587908958444,
+      "macro_pr_auc": 0.8785293592494913,
+      "mean_confidence": 0.8831987220548945,
+      "confidence_95_ci": 0.006814646029879135,
+      "class_confidences": {
+        "Normal": 0.9142758501902272,
+        "Suspect": 0.6262419883526418,
+        "Pathological": 0.8064381203127324
+      },
+      "class_sensitivities": {
+        "Normal": 0.9750566893424036,
+        "Suspect": 0.4491525423728814,
+        "Pathological": 0.8156028368794326
+      },
+      "class_specificities": {
+        "Normal": 0.6180371352785146,
+        "Suspect": 0.9808743169398907,
+        "Pathological": 0.9890955740859525
+      },
+      "class_pr_auc": {
+        "Normal": 0.9830328489151947,
+        "Suspect": 0.7200363515501282,
+        "Pathological": 0.932518877283151
+      },
+      "ece": 0.014068851653529259,
+      "brier_score": 0.16083389665199818,
+      "decision_threshold": null
+    }
+  },
+  "oof_delivery_standard": {
+    "task_name": "Delivery Mode (OOF Validation - Standard tau=0.50)",
+    "n_samples": 441,
+    "accuracy": 0.6848072562358276,
+    "macro_f1": 0.5002405080835175,
+    "macro_precision": 0.5297131147540983,
+    "macro_recall": 0.5824525020069574,
+    "macro_roc_auc": 0.6148648648648649,
+    "macro_pr_auc": 0.14804734991110702,
+    "mean_confidence": 0.6370291709899902,
+    "confidence_95_ci": 0.011941823164621989,
+    "class_confidences": {
+      "Vaginal": 0.6749471426010132,
+      "Cesarean": 0.5519924759864807
+    },
+    "class_sensitivities": {
+      "Vaginal": 0.7054455445544554,
+      "Cesarean": 0.4594594594594595
+    },
+    "class_specificities": {
+      "Vaginal": 0.4594594594594595,
+      "Cesarean": 0.7054455445544554
+    },
+    "class_pr_auc": {
+      "Cesarean": 0.14804734991110702,
+      "Vaginal": 0.9458595874465391
+    },
+    "ece": 0.04777808105594178,
+    "brier_score": 0.37581670683624074,
+    "decision_threshold": null,
+    "prior_calibrated": {
+      "task_name": "Delivery Mode (OOF Validation - Standard tau=0.50) [Prior-Calibrated]",
+      "n_samples": 441,
+      "accuracy": 0.9160997732426304,
+      "macro_f1": 0.47810650887573963,
+      "macro_precision": 0.4580498866213152,
+      "macro_recall": 0.5,
+      "macro_roc_auc": 0.6148648648648649,
+      "macro_pr_auc": 0.14804734991110702,
+      "mean_confidence": 0.9359881821377419,
+      "confidence_95_ci": 0.0033055522369468105,
+      "class_confidences": {
+        "Vaginal": 0.9359881821377419,
+        "Cesarean": 0.0
+      },
+      "class_sensitivities": {
+        "Vaginal": 1.0,
+        "Cesarean": 0.0
+      },
+      "class_specificities": {
+        "Vaginal": 0.0,
+        "Cesarean": 1.0
+      },
+      "class_pr_auc": {
+        "Cesarean": 0.14804734991110702,
+        "Vaginal": 0.9458595874465391
+      },
+      "ece": 0.01988840889511137,
+      "brier_score": 0.15216624923682248,
+      "decision_threshold": null
+    }
+  },
+  "oof_delivery_optimal": {
+    "task_name": "Delivery Mode (OOF Validation - Optimal tau*=0.64)",
+    "n_samples": 441,
+    "accuracy": 0.9024943310657596,
+    "macro_f1": 0.5525589297090677,
+    "macro_precision": 0.6042154566744731,
+    "macro_recall": 0.5416778164302917,
+    "macro_roc_auc": 0.6148648648648649,
+    "macro_pr_auc": 0.14804734991110702,
+    "mean_confidence": 0.6370291709899902,
+    "confidence_95_ci": 0.011941823164621989,
+    "class_confidences": {
+      "Vaginal": 0.6359952092170715,
+      "Cesarean": 0.6685670018196106
+    },
+    "class_sensitivities": {
+      "Vaginal": 0.9752475247524752,
+      "Cesarean": 0.10810810810810811
+    },
+    "class_specificities": {
+      "Vaginal": 0.10810810810810811,
+      "Cesarean": 0.9752475247524752
+    },
+    "class_pr_auc": {
+      "Cesarean": 0.14804734991110702,
+      "Vaginal": 0.9458595874465391
+    },
+    "ece": 0.04777808105594178,
+    "brier_score": 0.37581670683624074,
+    "decision_threshold": 0.6400000000000001,
+    "prior_calibrated": {
+      "task_name": "Delivery Mode (OOF Validation - Optimal tau*=0.64) [Prior-Calibrated]",
+      "n_samples": 441,
+      "accuracy": 0.9160997732426304,
+      "macro_f1": 0.47810650887573963,
+      "macro_precision": 0.4580498866213152,
+      "macro_recall": 0.5,
+      "macro_roc_auc": 0.6148648648648649,
+      "macro_pr_auc": 0.14804734991110702,
+      "mean_confidence": 0.9359881821377419,
+      "confidence_95_ci": 0.0033055522369468105,
+      "class_confidences": {
+        "Vaginal": 0.9359881821377419,
+        "Cesarean": 0.0
+      },
+      "class_sensitivities": {
+        "Vaginal": 1.0,
+        "Cesarean": 0.0
+      },
+      "class_specificities": {
+        "Vaginal": 0.0,
+        "Cesarean": 1.0
+      },
+      "class_pr_auc": {
+        "Cesarean": 0.14804734991110702,
+        "Vaginal": 0.9458595874465391
+      },
+      "ece": 0.01988840889511137,
+      "brier_score": 0.15216624923682248,
+      "decision_threshold": 0.6400000000000001
+    }
+  },
+  "single_model_test_ctg": {
+    "task_name": "CTG / Fetal Health (Single Model Fold 1 Test)",
+    "n_samples": 426,
+    "accuracy": 0.8403755868544601,
+    "macro_f1": 0.7624239321950649,
+    "macro_precision": 0.7180214541519682,
+    "macro_recall": 0.8357103960636736,
+    "macro_roc_auc": 0.9272977554907337,
+    "macro_pr_auc": 0.7753109873498847,
+    "mean_confidence": 0.8463415503501892,
+    "confidence_95_ci": 0.013288743501405272,
+    "class_confidences": {
+      "Normal": 0.8643310070037842,
+      "Suspect": 0.7633002996444702,
+      "Pathological": 0.8882917165756226
+    },
+    "class_sensitivities": {
+      "Normal": 0.8524096385542169,
+      "Suspect": 0.711864406779661,
+      "Pathological": 0.9428571428571428
+    },
+    "class_specificities": {
+      "Normal": 0.9042553191489362,
+      "Suspect": 0.8773841961852861,
+      "Pathological": 0.9641943734015346
+    },
+    "class_pr_auc": {
+      "Normal": 0.9831957464306007,
+      "Suspect": 0.4945663959569242,
+      "Pathological": 0.848170819662129
+    },
+    "ece": 0.03479526188451919,
+    "brier_score": 0.24627761058399197,
+    "decision_threshold": null,
+    "prior_calibrated": {
+      "task_name": "CTG / Fetal Health (Single Model Fold 1 Test) [Prior-Calibrated]",
+      "n_samples": 426,
+      "accuracy": 0.8568075117370892,
+      "macro_f1": 0.7333585947814517,
+      "macro_precision": 0.745136493453507,
+      "macro_recall": 0.7296824100275193,
+      "macro_roc_auc": 0.9369252650367971,
+      "macro_pr_auc": 0.8073785498536751,
+      "mean_confidence": 0.8908725309937371,
+      "confidence_95_ci": 0.013224418610283973,
+      "class_confidences": {
+        "Normal": 0.9311018327786243,
+        "Suspect": 0.6556250428555006,
+        "Pathological": 0.7990833116274506
+      },
+      "class_sensitivities": {
+        "Normal": 0.9367469879518072,
+        "Suspect": 0.423728813559322,
+        "Pathological": 0.8285714285714286
+      },
+      "class_specificities": {
+        "Normal": 0.648936170212766,
+        "Suspect": 0.9482288828337875,
+        "Pathological": 0.9769820971867008
+      },
+      "class_pr_auc": {
+        "Normal": 0.982863188047192,
+        "Suspect": 0.5718079885873888,
+        "Pathological": 0.8674644729264447
+      },
+      "ece": 0.055495931726811165,
+      "brier_score": 0.19132262660889696,
+      "decision_threshold": null
+    }
+  },
+  "single_model_test_delivery_standard": {
+    "task_name": "Delivery Mode (Single Model Fold 1 Test - Standard tau=0.50)",
+    "n_samples": 111,
+    "accuracy": 0.7747747747747747,
+    "macro_f1": 0.5313291673703766,
+    "macro_precision": 0.5344739530132788,
+    "macro_recall": 0.5735294117647058,
+    "macro_roc_auc": 0.5359477124183006,
+    "macro_pr_auc": 0.20253957992562224,
+    "mean_confidence": 0.698732316493988,
+    "confidence_95_ci": 0.020392144953168084,
+    "class_confidences": {
+      "Vaginal": 0.7204858064651489,
+      "Cesarean": 0.6107296943664551
+    },
+    "class_sensitivities": {
+      "Vaginal": 0.8137254901960784,
+      "Cesarean": 0.3333333333333333
+    },
+    "class_specificities": {
+      "Vaginal": 0.3333333333333333,
+      "Cesarean": 0.8137254901960784
+    },
+    "class_pr_auc": {
+      "Cesarean": 0.20253957992562224,
+      "Vaginal": 0.937679460930971
+    },
+    "ece": 0.07604247385317144,
+    "brier_score": 0.33541004382680617,
+    "decision_threshold": null,
+    "prior_calibrated": {
+      "task_name": "Delivery Mode (Single Model Fold 1 Test - Standard tau=0.50) [Prior-Calibrated]",
+      "n_samples": 111,
+      "accuracy": 0.918918918918919,
+      "macro_f1": 0.4788732394366197,
+      "macro_precision": 0.4594594594594595,
+      "macro_recall": 0.5,
+      "macro_roc_auc": 0.5359477124183006,
+      "macro_pr_auc": 0.20253957992562224,
+      "mean_confidence": 0.9442072181520664,
+      "confidence_95_ci": 0.008664951700704153,
+      "class_confidences": {
+        "Vaginal": 0.9442072181520664,
+        "Cesarean": 0.0
+      },
+      "class_sensitivities": {
+        "Vaginal": 1.0,
+        "Cesarean": 0.0
+      },
+      "class_specificities": {
+        "Vaginal": 0.0,
+        "Cesarean": 1.0
+      },
+      "class_pr_auc": {
+        "Cesarean": 0.20253957992562224,
+        "Vaginal": 0.937679460930971
+      },
+      "ece": 0.044901636181573584,
+      "brier_score": 0.14972085881759037,
+      "decision_threshold": null
+    }
+  },
+  "single_model_test_delivery_optimal": {
+    "task_name": "Delivery Mode (Single Model Fold 1 Test - Optimal tau*=0.64)",
+    "n_samples": 111,
+    "accuracy": 0.8648648648648649,
+    "macro_f1": 0.5222381635581061,
+    "macro_precision": 0.5236650485436893,
+    "macro_recall": 0.5212418300653595,
+    "macro_roc_auc": 0.5359477124183006,
+    "macro_pr_auc": 0.20253957992562224,
+    "mean_confidence": 0.698732316493988,
+    "confidence_95_ci": 0.020392144953168084,
+    "class_confidences": {
+      "Vaginal": 0.698387861251831,
+      "Cesarean": 0.7031668424606323
+    },
+    "class_sensitivities": {
+      "Vaginal": 0.9313725490196079,
+      "Cesarean": 0.1111111111111111
+    },
+    "class_specificities": {
+      "Vaginal": 0.1111111111111111,
+      "Cesarean": 0.9313725490196079
+    },
+    "class_pr_auc": {
+      "Cesarean": 0.20253957992562224,
+      "Vaginal": 0.937679460930971
+    },
+    "ece": 0.07604247385317144,
+    "brier_score": 0.33541004382680617,
+    "decision_threshold": 0.6400000000000001,
+    "prior_calibrated": {
+      "task_name": "Delivery Mode (Single Model Fold 1 Test - Optimal tau*=0.64) [Prior-Calibrated]",
+      "n_samples": 111,
+      "accuracy": 0.918918918918919,
+      "macro_f1": 0.4788732394366197,
+      "macro_precision": 0.4594594594594595,
+      "macro_recall": 0.5,
+      "macro_roc_auc": 0.5359477124183006,
+      "macro_pr_auc": 0.20253957992562224,
+      "mean_confidence": 0.9442072181520664,
+      "confidence_95_ci": 0.008664951700704153,
+      "class_confidences": {
+        "Vaginal": 0.9442072181520664,
+        "Cesarean": 0.0
+      },
+      "class_sensitivities": {
+        "Vaginal": 1.0,
+        "Cesarean": 0.0
+      },
+      "class_specificities": {
+        "Vaginal": 0.0,
+        "Cesarean": 1.0
+      },
+      "class_pr_auc": {
+        "Cesarean": 0.20253957992562224,
+        "Vaginal": 0.937679460930971
+      },
+      "ece": 0.044901636181573584,
+      "brier_score": 0.14972085881759037,
+      "decision_threshold": 0.6400000000000001
+    }
+  },
+  "cv_mean_test_ctg": {
+    "task_name": "CTG / Fetal Health (5-Fold CV Mean Test)",
+    "n_samples": 426,
+    "accuracy": 0.852112676056338,
+    "macro_f1": 0.7724550678259611,
+    "macro_precision": 0.7326255462714343,
+    "macro_recall": 0.8329822923655882,
+    "macro_roc_auc": 0.9340348310536483,
+    "macro_pr_auc": 0.8157023572054585,
+    "mean_confidence": 0.8082679510116577,
+    "confidence_95_ci": 0.012471397225859262,
+    "class_confidences": {
+      "Normal": 0.8222479820251465,
+      "Suspect": 0.7139974236488342,
+      "Pathological": 0.891096830368042
+    },
+    "class_sensitivities": {
+      "Normal": 0.8674698795180723,
+      "Suspect": 0.7457627118644068,
+      "Pathological": 0.8857142857142857
+    },
+    "class_specificities": {
+      "Normal": 0.8829787234042553,
+      "Suspect": 0.8937329700272479,
+      "Pathological": 0.9667519181585678
+    },
+    "class_pr_auc": {
+      "Normal": 0.9849920591295398,
+      "Suspect": 0.6118288608040531,
+      "Pathological": 0.8502861516827823
+    },
+    "ece": 0.04384468992551167,
+    "brier_score": 0.23136144202481823,
+    "decision_threshold": null,
+    "prior_calibrated": {
+      "task_name": "CTG / Fetal Health (5-Fold CV Mean Test) [Prior-Calibrated]",
+      "n_samples": 426,
+      "accuracy": 0.8779342723004695,
+      "macro_f1": 0.7440557305512737,
+      "macro_precision": 0.815526391953648,
+      "macro_recall": 0.7240098408160488,
+      "macro_roc_auc": 0.9432560037539041,
+      "macro_pr_auc": 0.8434851250386682,
+      "mean_confidence": 0.8810833355253813,
+      "confidence_95_ci": 0.013429594976748385,
+      "class_confidences": {
+        "Normal": 0.9148466437567696,
+        "Suspect": 0.5795341918703664,
+        "Pathological": 0.7707998030638382
+      },
+      "class_sensitivities": {
+        "Normal": 0.9759036144578314,
+        "Suspect": 0.3389830508474576,
+        "Pathological": 0.8571428571428571
+      },
+      "class_specificities": {
+        "Normal": 0.5957446808510638,
+        "Suspect": 0.9809264305177112,
+        "Pathological": 0.9820971867007673
+      },
+      "class_pr_auc": {
+        "Normal": 0.9849078692752742,
+        "Suspect": 0.6706289669994312,
+        "Pathological": 0.8749185388412993
+      },
+      "ece": 0.042721881032775876,
+      "brier_score": 0.18092505427185115,
+      "decision_threshold": null
+    }
+  },
+  "cv_mean_test_delivery_standard": {
+    "task_name": "Delivery Mode (5-Fold CV Mean Test - Standard tau=0.50)",
+    "n_samples": 111,
+    "accuracy": 0.7477477477477478,
+    "macro_f1": 0.4888157894736842,
+    "macro_precision": 0.5037055335968379,
+    "macro_recall": 0.5081699346405228,
+    "macro_roc_auc": 0.49237472766884527,
+    "macro_pr_auc": 0.19140229688945357,
+    "mean_confidence": 0.6276127099990845,
+    "confidence_95_ci": 0.012463479590015245,
+    "class_confidences": {
+      "Vaginal": 0.6418810486793518,
+      "Cesarean": 0.573021411895752
+    },
+    "class_sensitivities": {
+      "Vaginal": 0.7941176470588235,
+      "Cesarean": 0.2222222222222222
+    },
+    "class_specificities": {
+      "Vaginal": 0.2222222222222222,
+      "Cesarean": 0.7941176470588235
+    },
+    "class_pr_auc": {
+      "Cesarean": 0.19140229688945357,
+      "Vaginal": 0.9294950417919323
+    },
+    "ece": 0.12013488739460443,
+    "brier_score": 0.3763894215822345,
+    "decision_threshold": null,
+    "prior_calibrated": {
+      "task_name": "Delivery Mode (5-Fold CV Mean Test - Standard tau=0.50) [Prior-Calibrated]",
+      "n_samples": 111,
+      "accuracy": 0.918918918918919,
+      "macro_f1": 0.4788732394366197,
+      "macro_precision": 0.4594594594594595,
+      "macro_recall": 0.5,
+      "macro_roc_auc": 0.49237472766884527,
+      "macro_pr_auc": 0.19140229688945357,
+      "mean_confidence": 0.9374329441564031,
+      "confidence_95_ci": 0.0054996710761056914,
+      "class_confidences": {
+        "Vaginal": 0.9374329441564031,
+        "Cesarean": 0.0
+      },
+      "class_sensitivities": {
+        "Vaginal": 1.0,
+        "Cesarean": 0.0
+      },
+      "class_specificities": {
+        "Vaginal": 0.0,
+        "Cesarean": 1.0
+      },
+      "class_pr_auc": {
+        "Cesarean": 0.19140229688945357,
+        "Vaginal": 0.9294950417919323
+      },
+      "ece": 0.018514025237484126,
+      "brier_score": 0.1501339712447088,
+      "decision_threshold": null
+    }
+  },
+  "cv_mean_test_delivery_optimal": {
+    "task_name": "Delivery Mode (5-Fold CV Mean Test - Optimal tau*=0.64)",
+    "n_samples": 111,
+    "accuracy": 0.9099099099099099,
+    "macro_f1": 0.5595238095238095,
+    "macro_precision": 0.6296296296296297,
+    "macro_recall": 0.545751633986928,
+    "macro_roc_auc": 0.49237472766884527,
+    "macro_pr_auc": 0.19140229688945357,
+    "mean_confidence": 0.6276127099990845,
+    "confidence_95_ci": 0.012463479590015245,
+    "class_confidences": {
+      "Vaginal": 0.6267228126525879,
+      "Cesarean": 0.6596510410308838
+    },
+    "class_sensitivities": {
+      "Vaginal": 0.9803921568627451,
+      "Cesarean": 0.1111111111111111
+    },
+    "class_specificities": {
+      "Vaginal": 0.1111111111111111,
+      "Cesarean": 0.9803921568627451
+    },
+    "class_pr_auc": {
+      "Cesarean": 0.19140229688945357,
+      "Vaginal": 0.9294950417919323
+    },
+    "ece": 0.12013488739460443,
+    "brier_score": 0.3763894215822345,
+    "decision_threshold": 0.6400000000000001,
+    "prior_calibrated": {
+      "task_name": "Delivery Mode (5-Fold CV Mean Test - Optimal tau*=0.64) [Prior-Calibrated]",
+      "n_samples": 111,
+      "accuracy": 0.918918918918919,
+      "macro_f1": 0.4788732394366197,
+      "macro_precision": 0.4594594594594595,
+      "macro_recall": 0.5,
+      "macro_roc_auc": 0.49237472766884527,
+      "macro_pr_auc": 0.19140229688945357,
+      "mean_confidence": 0.9374329441564031,
+      "confidence_95_ci": 0.0054996710761056914,
+      "class_confidences": {
+        "Vaginal": 0.9374329441564031,
+        "Cesarean": 0.0
+      },
+      "class_sensitivities": {
+        "Vaginal": 1.0,
+        "Cesarean": 0.0
+      },
+      "class_specificities": {
+        "Vaginal": 0.0,
+        "Cesarean": 1.0
+      },
+      "class_pr_auc": {
+        "Cesarean": 0.19140229688945357,
+        "Vaginal": 0.9294950417919323
+      },
+      "ece": 0.018514025237484126,
+      "brier_score": 0.1501339712447088,
+      "decision_threshold": 0.6400000000000001
+    }
+  }
+}

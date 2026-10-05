@@ -1,0 +1,19 @@
+# Core Deep Learning & NLP
+torch>=2.0.0
+transformers>=4.40.0
+datasets>=2.18.0
+accelerate>=0.28.0
+
+# Scientific Computing & Machine Learning
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.11.0
+scikit-learn>=1.4.0
+
+# Explainability & Visualization
+shap>=0.45.0
+matplotlib>=3.8.0
+
+# Utilities
+tqdm>=4.66.0
+

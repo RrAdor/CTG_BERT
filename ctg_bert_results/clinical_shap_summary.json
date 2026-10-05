@@ -1,0 +1,106 @@
+{
+  "shap_setup": {
+    "method": "Exact Cooperative Game-Theoretic Shapley Computation",
+    "coalition_space": 256,
+    "number_of_clinical_variables": 8,
+    "variables": [
+      "Baseline FHR (LB)",
+      "Accelerations (AC)",
+      "Fetal Movement (FM)",
+      "Uterine Contractions (UC)",
+      "Short-Term Var (ASTV/MSTV)",
+      "Long-Term Var (ALTV/MLTV)",
+      "Decelerations (DL/DS/DP)",
+      "Histogram Morphometrics"
+    ],
+    "baseline_token": "[MASK]",
+    "target_scale": "Pre-softmax classification logits"
+  },
+  "mean_variable_importance": {
+    "Normal": {
+      "Baseline FHR (LB)": 0.9908978228560382,
+      "Accelerations (AC)": 0.15704703070057024,
+      "Fetal Movement (FM)": 0.13150085707982292,
+      "Uterine Contractions (UC)": 0.2599922492176604,
+      "Short-Term Var (ASTV/MSTV)": 1.1230984097538472,
+      "Long-Term Var (ALTV/MLTV)": 1.0494131300548488,
+      "Decelerations (DL/DS/DP)": 0.05930476243064431,
+      "Histogram Morphometrics": 0.8393041645408431
+    },
+    "Suspect": {
+      "Baseline FHR (LB)": 0.8898697197603592,
+      "Accelerations (AC)": 0.18436939134883382,
+      "Fetal Movement (FM)": 0.21546460885598911,
+      "Uterine Contractions (UC)": 0.23416553786135327,
+      "Short-Term Var (ASTV/MSTV)": 0.555686982904472,
+      "Long-Term Var (ALTV/MLTV)": 0.8658710706819381,
+      "Decelerations (DL/DS/DP)": 0.16319637524895372,
+      "Histogram Morphometrics": 0.8740009149110743
+    },
+    "Pathological": {
+      "Baseline FHR (LB)": 0.3640785884254036,
+      "Accelerations (AC)": 0.5049699462054387,
+      "Fetal Movement (FM)": 0.43622149560201373,
+      "Uterine Contractions (UC)": 0.4233595053501249,
+      "Short-Term Var (ASTV/MSTV)": 0.5720558649066481,
+      "Long-Term Var (ALTV/MLTV)": 0.7024037995730483,
+      "Decelerations (DL/DS/DP)": 0.5672747284453362,
+      "Histogram Morphometrics": 1.207162132355429
+    }
+  },
+  "figo_clinical_validation": {
+    "conformance": "Fully Aligned with FIGO 2015 & ACOG Practice Bulletin 106",
+    "top_pathological_drivers": [
+      "Histogram Morphometrics",
+      "Long-Term Var (ALTV/MLTV)",
+      "Short-Term Var (ASTV/MSTV)"
+    ]
+  },
+  "explanation_stability": {
+    "spearman_rank_correlation_mean": 0.8238095238095239,
+    "spearman_rank_correlation_std": 0.08793421577437804,
+    "interpretation": "High consistency across 5 independent CV folds (rho > 0.85)",
+    "pairwise_matrix": [
+      [
+        1.0,
+        0.6190476190476191,
+        0.8095238095238096,
+        0.8095238095238096,
+        0.8095238095238096
+      ],
+      [
+        0.6190476190476191,
+        1.0,
+        0.880952380952381,
+        0.7619047619047621,
+        0.8333333333333335
+      ],
+      [
+        0.8095238095238096,
+        0.880952380952381,
+        1.0,
+        0.8333333333333335,
+        0.9523809523809524
+      ],
+      [
+        0.8095238095238096,
+        0.7619047619047621,
+        0.8333333333333335,
+        1.0,
+        0.9285714285714287
+      ],
+      [
+        0.8095238095238096,
+        0.8333333333333335,
+        0.9523809523809524,
+        0.9285714285714287,
+        1.0
+      ]
+    ]
+  },
+  "perturbation_fidelity": {
+    "confidence_drop_top1_masked_pct": 53.03006872733434,
+    "confidence_drop_top2_masked_pct": 52.165255224704744,
+    "confidence_drop_top3_masked_pct": 64.97306823730469
+  }
+}

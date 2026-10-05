@@ -1,0 +1,60 @@
+# ==============================================================================
+# Python & Environment
+# ==============================================================================
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ==============================================================================
+# Model Training & Intermediate Checkpoints
+# ==============================================================================
+checkpoint-*/
+*/checkpoint-*/
+*/*/checkpoint-*/
+optimizer.pt
+scheduler.pt
+rng_state.pth
+trainer_state.json
+
+# Scratch directories
+*tune_scratch*/
+scratch/
+tmp/
+
+# ==============================================================================
+# LaTeX Build Artifacts
+# ==============================================================================
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
+
+# ==============================================================================
+# OS & Editor Files
+# ==============================================================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+.ipynb_checkpoints/
+
+# Temporary Archives
+*.zip
+*.tar.gz
+

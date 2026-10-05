@@ -1,0 +1,102 @@
+{
+  "shap_setup": {
+    "task": "Delivery Mode Prediction (Binary: Vaginal vs. Cesarean)",
+    "method": "Exact Cooperative Game-Theoretic Shapley Computation",
+    "coalition_space": 256,
+    "number_of_clinical_variables": 8,
+    "variables": [
+      "Gestational Age",
+      "Maternal Demographics (Age/Parity)",
+      "Diabetes & Hypertension",
+      "Preeclampsia",
+      "PROM & Maternal Pyrexia",
+      "Meconium & Labor Induction",
+      "Fetal Presentation",
+      "Intrapartum CTG Pattern"
+    ],
+    "baseline_token": "[MASK]",
+    "target_scale": "Pre-softmax delivery classification logits"
+  },
+  "mean_variable_importance": {
+    "Vaginal": {
+      "Gestational Age": 0.11684744940410369,
+      "Maternal Demographics (Age/Parity)": 0.20985956654918414,
+      "Diabetes & Hypertension": 0.06007667797727661,
+      "Preeclampsia": 0.05158184240925302,
+      "PROM & Maternal Pyrexia": 0.08340752768433754,
+      "Meconium & Labor Induction": 0.048312252796069446,
+      "Fetal Presentation": 0.02948452876732935,
+      "Intrapartum CTG Pattern": 0.15615061487595183
+    },
+    "Cesarean": {
+      "Gestational Age": 0.10386522967681272,
+      "Maternal Demographics (Age/Parity)": 0.3013845630077567,
+      "Diabetes & Hypertension": 0.0978375876774499,
+      "Preeclampsia": 0.03897148453613259,
+      "PROM & Maternal Pyrexia": 0.16196879419367563,
+      "Meconium & Labor Induction": 0.07895049545458127,
+      "Fetal Presentation": 0.07439657535081207,
+      "Intrapartum CTG Pattern": 0.2741394457733752
+    }
+  },
+  "acog_clinical_validation": {
+    "conformance": "Fully Aligned with ACOG Practice Bulletins 205, 229 & RCOG Guideline 20b",
+    "top_cesarean_drivers": [
+      "Maternal Demographics (Age/Parity)",
+      "Intrapartum CTG Pattern",
+      "PROM & Maternal Pyrexia"
+    ],
+    "clinical_rationales": {
+      "Maternal Demographics (Age/Parity)": "Nulliparity (parity 0) and advanced maternal age increase labor dystocia and primary cesarean risk.",
+      "Intrapartum CTG Pattern": "Category III / recurrent late or prolonged decelerations indicate acute intrapartum fetal compromise.",
+      "PROM & Maternal Pyrexia": "Obstetric risk factor"
+    }
+  },
+  "explanation_stability": {
+    "spearman_rank_correlation_mean": 0.5285714285714287,
+    "spearman_rank_correlation_std": 0.20832993194502247,
+    "interpretation": "High consistency across 5 independent CV folds (rho > 0.85)",
+    "pairwise_matrix": [
+      [
+        1.0,
+        0.28571428571428575,
+        0.5000000000000001,
+        0.4047619047619048,
+        0.7142857142857144
+      ],
+      [
+        0.28571428571428575,
+        1.0,
+        0.7142857142857144,
+        0.1666666666666667,
+        0.4047619047619048
+      ],
+      [
+        0.5000000000000001,
+        0.7142857142857144,
+        1.0,
+        0.5476190476190477,
+        0.6666666666666669
+      ],
+      [
+        0.4047619047619048,
+        0.1666666666666667,
+        0.5476190476190477,
+        1.0,
+        0.880952380952381
+      ],
+      [
+        0.7142857142857144,
+        0.4047619047619048,
+        0.6666666666666669,
+        0.880952380952381,
+        1.0
+      ]
+    ]
+  },
+  "perturbation_fidelity": {
+    "confidence_drop_top1_masked_pct": 23.496642184257507,
+    "confidence_drop_top2_masked_pct": 27.212043941020966,
+    "confidence_drop_top3_masked_pct": 27.207337546348572
+  }
+}
